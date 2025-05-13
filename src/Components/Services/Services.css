@@ -29,8 +29,11 @@
     padding: 60px;
     border-radius: 10px;
     border: 2px solid white;
-    transition: 0.4s;
+    transition: transform 0.4s, background-image 0.4s, border 0.4s;
     cursor: pointer;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
 }
 .services-container{
     display: grid;
@@ -61,13 +64,57 @@
     gap: 20px;
     align-items: center;
     margin-top: 20px;
+    cursor: pointer;
 }
 .services-format:hover{
     border: 2px solid #ff00ff;
     background-image: linear-gradient(45deg, #3f0028, #582300);
     transform: scale(1.05);
-    transition: 0.4s;
 }
+
+
+
+.services-desc {
+    position: relative;
+}
+
+.short-desc {
+    opacity: 1;
+    max-height: 300px;
+    overflow: hidden;
+    transition: opacity 0.4s ease, max-height 0.4s ease;
+  }
+
+.long-desc {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.4s ease, max-height 0.4s ease;
+    /* font-size: 20px;
+    color: #ddd;
+    line-height: 30px;
+    margin-top: 0; */
+  }
+
+  .services-format:hover .short-desc {
+    opacity: 0;
+    max-height: 0;
+    /* overflow: hidden; */
+  }
+
+  .services-format:hover .long-desc {
+    opacity: 1;
+    max-height: 300px;
+    /* margin-top: 10px; */
+  }
+
+
+.services-format:hover .services-readmore {
+    opacity: 0;
+    transition: opacity 0.3s;
+    display: none;
+}
+
 @media(max-width:768px){
     .services{
         align-items: start;
