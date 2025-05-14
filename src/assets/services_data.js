@@ -17,8 +17,7 @@ const Services_Data = [
     s_no: "03",
     s_name: "Social media",
     s_desc: "Helping small brands build an online presence.",
-    s_long_desc:
-      "Planning and posting engaging content for platforms like Instagram, Facebook, or TikTok. Helping small businesses grow followers and stay active with a consistent online voice.",
+    s_long_desc: "Creating and posting engaging content to help small brands grow their online presence and connect with their audience.",
   },
   {
     s_no: "04",
