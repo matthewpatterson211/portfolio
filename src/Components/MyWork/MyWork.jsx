@@ -12,7 +12,11 @@ const MyWork = () => {
             <img src={theme_pattern} alt="" />
         </div>
         <div className="mywork-container">
-          {mywork_data.map((work,index) =>{return <img key={index} src={work.w_img} alt="" />})}
+          {mywork_data.map((work, index) => (
+          <a key={index} href={work.w_link} target="_blank" rel="noopener noreferrer">
+            <img src={work.w_img} alt={`Work ${index + 1}`} />
+          </a>
+        ))}
         </div>
         <div className="mywork-showmore">
           <p>Show More</p>
