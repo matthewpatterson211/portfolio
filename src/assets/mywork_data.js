@@ -1,5 +1,5 @@
 import project1_img from '../assets/RecipeDash.png'
-import project2_img from '../assets/project_2.svg'
+import project2_img from '../assets/project_2.jpg'
 import project3_img from '../assets/project_3.svg'
 import project4_img from '../assets/project_4.svg'
 import project5_img from '../assets/project_5.svg'
@@ -14,8 +14,9 @@ const mywork_data = [
     },
     {
         w_no:2,
-        w_name:"Web design",
-        w_img:project2_img
+        w_name:"Maze Craze",
+        w_img:project2_img,
+        w_link:"https://github.com/matthewpatterson211/Maze-Craze"
     },
     {
         w_no:3,
