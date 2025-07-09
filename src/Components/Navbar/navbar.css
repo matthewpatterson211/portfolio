@@ -1,3 +1,11 @@
+:root {
+    --primary-color: #a8dadc;
+    --secondary-color: #457b9d;
+    --text-color: #f1faee;
+    --background-color: #1d3557;
+    --hover-color: #e63946;
+}
+
 .navbar{
     display: flex;
     align-items: center;
@@ -16,7 +24,7 @@
 .nav-connect{
     padding: 20px 40px;
     border-radius: 50px;
-    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+    background: linear-gradient(267deg, var(--primary-color) 0.36%, var(--secondary-color) 102.06%);
     font-size: 22px;
     cursor: pointer;
     transition: 0.5s;
@@ -39,7 +47,7 @@
 
 .anchor-link{
     text-decoration: none;
-    color: white;
+    color: var(--text-color);
 }
 
 .nav-mob-close {
@@ -76,7 +84,7 @@
         align-items: start;
         top: 0;
         gap: 30px;
-        background-color: #1F0016;
+        background-color: var(--background-color);
         width: 350px;
         height: 100%;
         z-index: 2;

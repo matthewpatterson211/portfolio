@@ -3,9 +3,17 @@
   padding: 0;
 }
 
+:root {
+    --primary-color: #a8dadc;
+    --secondary-color: #457b9d;
+    --text-color: #f1faee;
+    --background-color: #1d3557;
+    --hover-color: #e63946;
+}
+
 body{
   height: 100vh;
-  background: #161513;
-  color:white;
+  background: var(--background-color);
+  color: var(--text-color);
   font-family: 'outfit';
 }

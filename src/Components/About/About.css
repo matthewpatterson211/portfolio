@@ -1,3 +1,12 @@
+:root {
+    --primary-color: #a8dadc;
+    --secondary-color: #457b9d;
+    --text-color: #f1faee;
+    --text-background-color: #457b9d;
+    --background-color: #1d3557;
+    --hover-color: #e63946;
+}
+
 .about{
     display: flex;
     flex-direction: column;
@@ -58,7 +67,7 @@
     width: 50%;
     height: 8px;
     border-radius: 50px;
-    background: linear-gradient(264deg, #9fd3c7 -5%, #385170);
+    background: linear-gradient(264deg, var(--primary-color) -5%, var(--secondary-color) 100%);
 }
 .about-achievements{
     display: flex;
@@ -76,7 +85,7 @@
 .about-achievement h1{
     font-size: 60px;
     font-weight: 700;
-    background: linear-gradient(270deg, #9fd3c7 50%, #385170);
+    background: linear-gradient(270deg, var(--primary-color) 50%, var(--secondary-color));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
