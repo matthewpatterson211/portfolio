@@ -18,10 +18,18 @@ const MyWork = () => {
           </a>
         ))}
         </div>
-        <div className="mywork-showmore">
-          <p>Show More</p>
-          <img src={arrow_icon} alt="" />
-        </div>
+       <div className="mywork-showmore">
+  <a
+    href="https://github.com/matthewpatterson211"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="showmore-link"
+  >
+    <p>Show More</p>
+    <img src={arrow_icon} alt="Arrow icon" />
+  </a>
+</div>
+
     </div>
   )
 }
